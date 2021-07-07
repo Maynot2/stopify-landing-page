@@ -25,7 +25,16 @@ Un service nommé `dev_server` est défini dans le fichier docker-compose.yml.
 CTRL+C ou `docker-compose down`
 
 ### Changer la version d'hugo installée dans l'image Docker
-\\ À écrire \\
+- Dans le terminal Faire un 'docker-compose build' à la racine du projet
+- Dans le terminal Faire un 'docker-compose up' à la racine du projet
+- Ouvrir un shell attaché au conteneur docker puis faire 'hugo version'
+- On constate que la version est 0.81.0
+- dans docker-image/_script/hugo.sh (ligne 6), changer la variable d'environement HUGO_VERSION en 0.85.0
+- sauvegarder le fichier hugo.sh
+- revenir a la racine du projet si besoin
+- Dans le terminal refaire un 'docker-compose build' a la racine du projet
+- Refaire 'docker-compose up'
+- La version affichée dans le terminal est bien 0.85.0
 
 ## Procédure d'Intégration et Déploiement Continu sur GitHub Pages
 L'intégration et le déploiement continus sur `GitHub Pages` sont effectués via github actions.
