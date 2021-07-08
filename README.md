@@ -39,16 +39,13 @@ CTRL+C ou `docker-compose down`
 ## Procédure d'Intégration et Déploiement Continu sur GitHub Pages
 L'intégration et le déploiement continus sur `GitHub Pages` sont effectués via github actions.
 Le fichier `.github/workflows/gh-pages.yml` définis les actions effectuées :
-- déclenchement du pipeline lors d'un push sur la branche `ci-cd`
+- déclenchement du pipeline lors d'un push sur la branche `main`
 - définition d'un job nommé `deploy` qui :
   - est lancé sur un container unbuntu
   - fait un git checkout
   - configure hugo dans la version définie via la variable `hugo-version`
   - lance la commande `hugo --minify -e gh-pages -s website` pour générer les fichiers html en précisant qu'il s'agit de l'environnement hugo `gh-pages`
   - déploie le contenu du dossier website/public contenant les fichiers html (générés par la commande précédente) sur github pages
-
-//WIP// À faire :
-- faire une pull request pour merger cette branche dans main et adapter github actions en conséquence
 
 ### Vérification
 Pour vérifier l'exécution de GitHub Actions il faut client sur l'onglet "Actions" du dépôt sur github.com.  
