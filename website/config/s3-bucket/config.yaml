@@ -2,5 +2,5 @@ baseURL: http://stopify-20210715194938904500000001.s3-website.eu-west-3.amazonaw
 title: Stopify - Amazon S3
 deployment:
   targets:
-      name: "S3bucket"
-      URL: 's3://stopify-20210715133237881400000001?region=eu-west-3'
+    - name: S3bucket
+      URL: "s3://stopify-20210715133237881400000001?region=eu-west-3"
