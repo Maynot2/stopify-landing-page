@@ -1,6 +1,6 @@
-baseURL: http://stopify-20210715194938904500000001.s3-website.eu-west-3.amazonaws.com
+baseURL: http://stopify-paul-manot.s3-website.eu-west-3.amazonaws.com
 title: Stopify - Amazon S3
 deployment:
   targets:
     - name: S3bucket
-      URL: "s3://stopify-20210715194938904500000001?region=eu-west-3"
+      URL: s3://stopify-paul-manot?region=eu-west-3

@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: hugo --minify -e s3-bucket -s website
 
-      - name: Deploy To S3
+      - name: Deploy to S3
         run: hugo deploy --force --maxDeletes -1 --source="website" -e s3-bucket 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
