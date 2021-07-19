@@ -69,3 +69,5 @@ Si vous voyez une erreur 404 "There isn't a GitHub Pages site here." il y a 2 pr
 #### Erreur d'affichages des images
 Si le FQDN GitHub Pages ne correspond pas à celui configuré comme `baseURL` dans hugo, il se peut que les images ne s'affichent pas correctement.
 Changer la propriété `baseURL` pour la valeur correspondant dans le fichier `website/config/gh-pages/config.yml`
+
+just a test
