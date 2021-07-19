@@ -1,4 +1,4 @@
-<!-- ---
+---
 banner:
   title : "Toute la musique que vous aimez ! N'importe où et n'importe quand"
   image : "images/banner.jpg"
@@ -7,6 +7,4 @@ banner:
     enable : true
     label : "Contactez-nous"
     link : "contact"
-
-
---- -->
+---
